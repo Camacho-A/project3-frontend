@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 function Header(props) {
-	return (
-		<nav className="nav">
-			<Link to="/">
-				<div>Home</div>
-			</Link>
-		</nav>
-	)
+  return (
+    <div className="header">
+      <Link to="/">
+        <div className="header__name">DOTBEATS</div>
+      </Link>
+    </div>
+  )
 }
 
 export default Header

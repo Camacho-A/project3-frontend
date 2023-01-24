@@ -1,15 +1,32 @@
-import { Link, useLoaderData } from "react-router-dom"
+import { Link, useLoaderData, Form } from 'react-router-dom'
+import '../css/app.css'
+function Main(props) {
+  const musics = useLoaderData()
 
-function Main(props){
-    const musics = useLoaderData()
-
-    return musics.map(music => (
+  return (
+    <>
+    <div className="main__container">
+    
+        <Form action="/create" method="post">
+          <input className='main__input' type="input" name="song" placeholder="Song" required />
+          <input className='main__input' type="input" name="url" placeholder="URL" />
+          <input className='main__input' type="input" name="artist" placeholder="Artist" />
+          <input className='main__input' type="input" name="genre" placeholder="Genre" />
+          <input className='main__input' type="input" name="albumImage" placeholder="Album Image" />
+          <input className='btn btn--main__input' type="submit" value="Add Song" />
+        </Form>
+     </div>
+<div className='main__list'>
+      {musics.map((music) => (
         <div key={music._id} className="music">
-            <Link to={`/${music._id}`}>
-                <h1>{music.profile}</h1>
-            </Link>
+          <Link to={`/${music._id}`}>
+            <h3 className='music__name'>{music.song}</h3>
+          </Link>
         </div>
-    ))
+      ))}
+    </div>
+    </>
+  )
 }
 
 export default Main
