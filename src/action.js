@@ -8,6 +8,7 @@ export const createAction = async ({ request }) => {
   
   const newMusic = {
     artist: formData.get("artist"),
+    profile: formData.get("profile"),
     genre: formData.get("genre"),
     url: formData.get("url"),
     song: formData.get("song"),
@@ -30,7 +31,8 @@ export const updateAction = async ({ request, params }) => {
 	const formData = await request.formData()
 	
 	const updatedMusic = {
-	artist: formData.get("artist"),
+	  artist: formData.get("artist"),
+    profile: formData.get("profile"),
     genre: formData.get("genre"),
     url: formData.get("url"),
     song: formData.get("song"),
