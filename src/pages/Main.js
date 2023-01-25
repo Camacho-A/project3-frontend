@@ -1,30 +1,32 @@
-import { Form, Link, useLoaderData } from "react-router-dom"
+import { Link, useLoaderData, Form } from 'react-router-dom'
+import '../css/app.css'
+function Main(props) {
+  const musics = useLoaderData()
 
-function Main(props){
-    const musics = useLoaderData()
-
-    return (
-        <div>
-            <h2>Create a Profile</h2>
-            <Form action={`/create`} method="post">
-                <input type="input" name="artist" placeholder="artist name"/>
-                <input type="input" name="genre" placeholder="genre"/>
-                <input type="input" name="song" placeholder="song"/>
-                <input type="input" name="url" placeholder="song url"/>
-                <input type="input" name="albumImage" placeholder="album image"/>
-                <input type="submit" value={`Add an Artist`}/>
-            </Form>
-
-            <h2>Artists</h2>
-            {musics.map(music => (
-                <div key={music._id} className="music">
-                    <Link to={`/${music._id}`}>
-                        <img src={music.albumImage} alt={music.song}/>
-                    </Link>
-                </div>
-            ))}
+  return (
+    <>
+    <div className="main__container">
+    
+        <Form action="/create" method="post">
+          <input className='main__input' type="input" name="song" placeholder="Song" required />
+          <input className='main__input' type="input" name="url" placeholder="URL" />
+          <input className='main__input' type="input" name="artist" placeholder="Artist" />
+          <input className='main__input' type="input" name="genre" placeholder="Genre" />
+          <input className='main__input' type="input" name="albumImage" placeholder="Album Image" />
+          <input className='btn btn--main__input' type="submit" value="Add Song" />
+        </Form>
+     </div>
+<div className='main__list'>
+      {musics.map((music) => (
+        <div key={music._id} className="music">
+          <Link to={`/${music._id}`}>
+          <img src={music.albumImage} alt={music.song}/>
+          </Link>
         </div>
-    )
+      ))}
+    </div>
+    </>
+  )
 }
 
 export default Main
