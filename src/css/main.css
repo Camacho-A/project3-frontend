@@ -1,0 +1,30 @@
+.main__container {
+
+    padding: 20px;
+    display: flex;
+    
+    
+    justify-content: space-around;
+    margin: 0 -5px 5px 5px;
+    }
+    
+    .main__input {
+    
+       max-width: 15%;
+       margin: 5px;
+       padding: 3px;
+       border-radius: 7px;
+       font-size: 18px;
+       background-color: rgb(255, 255, 255);
+       outline: none;
+       border: none;
+    }
+    
+    .main__list {
+        text-align: center;
+       
+    }
+    
+    .music__name {
+        color:grey
+    }
