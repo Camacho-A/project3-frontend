@@ -1,0 +1,15 @@
+.header {
+  outline: 2px solid;
+  background-color: rgb(17, 202, 70);
+height: 60px;
+text-align: left;
+text-decoration: none;
+padding: 2px;
+}
+
+.header__name {
+    padding-left: 30px;
+    font-size: 50px;
+    color:rgb(101, 25, 188);
+    font-weight:300;
+}

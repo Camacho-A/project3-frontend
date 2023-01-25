@@ -2,11 +2,11 @@ import { Link } from "react-router-dom"
 
 function Header(props) {
 	return (
-		<nav className="nav">
+		<div className="header">
 			<Link to="/">
-				<div>Home</div>
+				<div className="header__name">dotBEATS</div>
 			</Link>
-		</nav>
+		</div>
 	)
 }
 
