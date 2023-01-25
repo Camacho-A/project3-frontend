@@ -22,6 +22,7 @@ function Main(props) {
           <Link to={`/${music._id}`}>
           <img src={music.albumImage} alt={music.song}/>
           </Link>
+          <p >{music.artist}</p>
         </div>
       ))}
     </div>
