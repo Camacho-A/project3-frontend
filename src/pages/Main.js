@@ -20,7 +20,7 @@ function Main(props) {
       {musics.map((music) => (
         <div key={music._id} className="music">
           <Link to={`/${music._id}`}>
-            <h3 className='music__name'>{music.song}</h3>
+           <img src={music.albumImage} alt={music.song} />
           </Link>
         </div>
       ))}
