@@ -69,7 +69,7 @@ function Show(props) {
           <div className="show__info">
             <span className="show__span">Link: </span>
             <span>
-              <a href={music.url}>{music.song}</a>
+              <a href={music.url} target='_blank' rel='nonreferrer' >{music.song}</a>
             </span>
           </div>
         </div>
