@@ -24,12 +24,44 @@
 }
 
 .music {
+  position: relative;
+  width: 70%;
+  padding: 20px;
 
 }
-p {
-  color: greenyellow;
-  font-size: 13px;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100; 
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #595959;
+  border-radius: 50px;
 }
+
+.music:hover .overlay {
+   opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+
+
 
 .btn--add {
   margin-top: 15px;
