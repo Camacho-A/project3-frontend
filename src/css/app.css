@@ -3,6 +3,7 @@
 @import 'main.css';
 @import 'show.css';
 @import 'footer.css';
+@import 'create.css';
 
 *,*::before, *::after{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

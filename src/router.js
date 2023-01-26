@@ -8,6 +8,7 @@ import Main from "./pages/Main"
 import Show from "./pages/Show"
 import { musicsLoader, musicLoader } from "./loader"
 import { createAction,updateAction,deleteAction } from "./action"
+import Create from "./pages/Create"
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -16,6 +17,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path="create" action={createAction}/>
         <Route path="update/:id" action={updateAction} />
         <Route path="delete/:id" action={deleteAction} />
+        <Route path="add" element={<Create/>} />
     </Route>
 ))
 
