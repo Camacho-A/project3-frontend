@@ -1,21 +1,6 @@
-.main__container {
-  padding: 20px;
-  text-align: center;
-}
-
-.main__input {
-  max-width: 15%;
-  margin: 5px;
-  padding: 3px;
-  border-radius: 7px;
-  font-size: 18px;
-  background-color: rgb(255, 255, 255);
-  outline: none;
-  border: none;
-}
 
 .main__list {
-  margin-top: 50px;
+  margin-top: 20px;
   padding-inline-start: 30px;
   padding-inline-end: 30px;
   display: grid;
@@ -40,16 +25,16 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #595959;
+  background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%);
   border-radius: 50px;
 }
 
 .music:hover .overlay {
-   opacity: .9;
+   opacity: 0.9;
 }
 
 .text {
-  color: white;
+  color: rgb(196, 32, 32);
   font-size: 36px;
   position: absolute;
   top: 35%;
@@ -59,21 +44,9 @@
   transform: translate(-50%, -50%);
 }
 
-
-.btn--add {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.btn {
-  background-color: rgb(101, 125, 188);
-  border-radius: 3px;
-  padding: 3px;
-  font-size: 17px;
-}
-
 img {
   width: 100px;
   height: 200px;
   object-fit: cover;
 }
+

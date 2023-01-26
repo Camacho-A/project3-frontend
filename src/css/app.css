@@ -3,6 +3,7 @@
 @import 'main.css';
 @import 'show.css';
 @import 'footer.css';
+@import 'create.css';
 
 *,*::before, *::after{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,9 +19,17 @@ body {
 a {
     display:inline-block ;
     text-decoration: none;
+    color:rgb(97, 236, 236)
 }
 
 img {
     border-radius: 30px;
     width: 200px;
+  }
+
+  .App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }

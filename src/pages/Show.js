@@ -42,7 +42,7 @@ function Show(props) {
             placeholder="Album Image"
             defaultValue={music.albumImage}
           />
-          <input type="submit" value="Update" />
+          <input className='btn' type="submit" value="Update" />
         </Form>
       </div>
 
@@ -72,7 +72,7 @@ function Show(props) {
           <div className="show__info">
             <span className="show__span">Link: </span>
             <span className='show__span2'>
-              <a href={music.url}>{music.song}</a>
+              <a href={music.url} target='_blank' rel="noopener noreferrer" >{music.song}</a>
             </span>
           </div>
         </div>
@@ -80,7 +80,7 @@ function Show(props) {
 
       <div className='show__delete'>
         <Form action={`/delete/${music._id}`} method="post">
-          <input type="submit" value="delete" />
+          <input className='btn__delete ' type="submit" value="delete" />
         </Form>
       </div>
     </>
