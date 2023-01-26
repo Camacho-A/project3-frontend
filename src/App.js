@@ -1,11 +1,14 @@
-
-import './App.css';
+import { Outlet } from 'react-router-dom'
+import Header from './components/Header'
+import './css/app.css'
 
 function App() {
   return (
-    null
-    
-  );
+    <div className="App">
+      <Header />
+      <Outlet />
+    </div>
+  )
 }
 
-export default App;
+export default App
