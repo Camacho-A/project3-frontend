@@ -1,0 +1,41 @@
+.footer {
+    background-color: #2d2d2d;
+    /* height: 60px; */
+    /* text-align: left; */
+    /* text-decoration: none; */
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description{
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+  }
+
+  .description h2{
+    color: #6519bc;
+    font-size: x-large;
+  }
+
+  .description p{
+    font-size: small;
+    color: #a6a6a6;
+  }
+
+  .contributors{
+    width: 43%;
+    padding-right: 20px;
+    color: #6519bc;
+    text-align: right;
+  }
+
+  .contributors a{
+    margin-bottom: 2px;
+    color: #a6a6a6;
+    font-size: small;
+  }
+

@@ -25,7 +25,7 @@
 
 .music {
   position: relative;
-  width: 75%;
+  width: 80%;
   padding: 20px;
 
 }
@@ -57,10 +57,6 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
-
-
-}
 
 
 .btn--add {
