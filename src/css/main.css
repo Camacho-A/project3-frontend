@@ -1,8 +1,6 @@
 .main__container {
   padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 -5px 5px 5px;
+  text-align: center;
 }
 
 .main__input {
@@ -26,8 +24,21 @@
 }
 
 .music {
+
 }
 p {
   color: greenyellow;
   font-size: 13px;
+}
+
+.btn--add {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(101, 125, 188);
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 17px;
 }
