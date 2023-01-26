@@ -13,7 +13,7 @@ function Header(props) {
 
       <div>
         <Link to="add">
-          <button className="main__add--btn">New</button>
+          <button className="header__add--btn">New</button>
         </Link>
       </div>
     </div>
