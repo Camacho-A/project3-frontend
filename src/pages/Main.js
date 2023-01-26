@@ -12,8 +12,10 @@ function Main(props) {
           <input className='main__input' type="input" name="url" placeholder="URL" />
           <input className='main__input' type="input" name="artist" placeholder="Artist" />
           <input className='main__input' type="input" name="genre" placeholder="Genre" />
-          <input className='main__input' type="input" name="albumImage" placeholder="Album Image" />
+          <input className='main__input' type="input" name="albumImage" placeholder="Album Image" /><br/>
+    <div className='btn--add'>
           <input className='btn btn--main__input' type="submit" value="Add Song" />
+</div>
         </Form>
      </div>
 <div className='main__list'>
