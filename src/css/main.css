@@ -42,3 +42,9 @@ p {
   padding: 3px;
   font-size: 17px;
 }
+
+img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+}
