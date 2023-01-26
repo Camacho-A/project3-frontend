@@ -4,7 +4,12 @@ function Header(props) {
 	return (
 		<div className="header">
 			<Link to="/">
-				<div className="header__name">dotBEATS</div>
+			<div class="header__name two">
+        <div class="neon">
+            <h3>dotBEATS</h3>
+        </div>
+    </div>
+
 			</Link>
 		</div>
 	)
