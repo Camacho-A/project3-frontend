@@ -1,16 +1,13 @@
 .footer {
-  margin-top: auto;
+    margin-top: 20px;
     background-color: #2d2d2d;
-    /* height: 60px; */
-    /* text-align: left; */
-    /* text-decoration: none; */
     padding: 2px;
     display: flex;
     justify-content: space-between;
   }
 
   .description{
-    width: 50%;
+    width: 49%;
     text-align: left;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -28,8 +25,9 @@
   }
 
   .contributors{
-    width: 43%;
+    width: 50%;
     padding-right: 20px;
+    padding-bottom: 10px;
     color: #a659ff;
     text-align: right;
   }
@@ -40,4 +38,17 @@
     font-size: small;
   }
 
-  
+  @media screen and (max-width: 295px) {
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+
+    .contributors h2 {
+        font-size: 20px;
+        padding-left: 0px;
+
+    }
+
+}
