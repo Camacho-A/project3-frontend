@@ -25,10 +25,12 @@ Music has the ability to bring people together. It has the power to transcend la
 - Outlet -- "/music/update/:id" --> updateAction
 - Outlet -- "/music/delete/:id" --> deleteAction
 
-### Mockup Screenshots
-![WelcomePage](https://i.imgur.com/QqeuhfB.png)
-![IndexPage](https://i.imgur.com/Q7U5kli.png)
-![ShowPage](https://i.imgur.com/6ZPMb9M.png)
+### Website Images
+![IndexPage](https://i.imgur.com/NHzlwMj.png)
+![ShowPage](https://i.imgur.com/0CfQGFH.png)
+
+### Backend Wireframe
+![Wireframe](https://i.imgur.com/cRkBW9h.png)
 
 ### Link to Planning Trello Board
 [Trello Board](https://trello.com/b/R18LUIEC/project-3)
