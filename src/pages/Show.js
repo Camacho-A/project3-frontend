@@ -46,6 +46,8 @@ function Show(props) {
         </Form>
       </div>
 
+{/* Show */}
+
       <div className="show__img--container">
         <img
           className="show__img"
@@ -57,8 +59,8 @@ function Show(props) {
       <div className="show__list">
         <div className="show__text">
           <div className="show__info">
-            <span className="show__span">Song/Link: </span>
-            <span className='show__span2'> <a href={music.url} target='_blank' rel="noopener noreferrer" >{music.song}</a></span>
+            <span className="show__span">Song: </span>
+            <span className='show__span2'> <a href={music.url} target='_blank' rel="noopener noreferrer" className='link'>{music.song}</a></span>
           </div>
 
           <div className="show__info">

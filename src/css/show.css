@@ -14,6 +14,7 @@
   outline: none;
   border: none;
   text-align: center;
+  
 }
 
 .show__list {
@@ -28,7 +29,7 @@
   color: rgb(156, 107, 48);
   padding: 13px;
 
- 
+  text-shadow: 1px 1px #110808;
 }
 
 .show__text {
@@ -102,4 +103,8 @@ border-radius: 5px;
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   background-color: #7cf2c3;
+}
+
+.link:hover {
+color: rgb(230, 163, 243);
 }
