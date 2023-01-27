@@ -39,7 +39,7 @@ padding: 2px;
   border-radius: 5px;
 } 
 
-button:hover{
+.header__add--btn:hover{
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
