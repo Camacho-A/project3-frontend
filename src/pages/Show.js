@@ -36,6 +36,7 @@ function Show(props) {
             defaultValue={music.genre}
           />
           <input
+          required
             className="show__input"
             type="input"
             name="albumImage"

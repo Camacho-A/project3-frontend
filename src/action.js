@@ -47,7 +47,7 @@ export const updateAction = async ({ request, params }) => {
 		body: JSON.stringify(updatedMusic),
 	})
 
-	return redirect("/")
+	return redirect(`/${params.id}`)
 }
 
 export const deleteAction = async ({ params }) => {
