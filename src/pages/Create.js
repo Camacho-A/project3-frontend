@@ -39,7 +39,7 @@ function Create() {
           type="input"
           name="albumImage"
           placeholder="Album Image"
-          autocomplete='off'
+      
         /></div>
         <br />
         <div className="btn--add">
