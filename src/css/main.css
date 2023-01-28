@@ -45,12 +45,14 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-shadow: 1px 2px #110808;
+
 }
 
 img {
   border-radius: 30px;
   width: 200px;
   height: 200px;
+
   object-fit:cover;
 
 }
@@ -65,3 +67,4 @@ img {
    
   }
 }
+
