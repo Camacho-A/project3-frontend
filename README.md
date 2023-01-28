@@ -27,8 +27,8 @@ Music has the ability to bring people together. It has the power to transcend la
 -  Route path="add" element={Create} 
 
 ### Website Images
-![IndexPage](https://i.imgur.com/NHzlwMj.png)
-![ShowPage](https://i.imgur.com/0CfQGFH.png)
+![IndexPage](https://i.imgur.com/HXWLYAG.png)
+![ShowPage](https://i.imgur.com/60Yennf.png)
 
 ### Backend Wireframe
 ![Wireframe](https://i.imgur.com/cRkBW9h.png)
