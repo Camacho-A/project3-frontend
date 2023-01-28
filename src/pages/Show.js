@@ -1,4 +1,4 @@
-import { useLoaderData, Form } from 'react-router-dom'
+import { useLoaderData, Form, Link  } from 'react-router-dom'
 
 function Show(props) {
   const music = useLoaderData()
@@ -42,9 +42,11 @@ function Show(props) {
             placeholder="Album Image"
             defaultValue={music.albumImage}
           />
-          <input type="submit" value="Update" />
+          <input className='btn__show--update' type="submit" value="Update" />
         </Form>
       </div>
+
+{/* Show */}
 
       <div className="show__img--container">
         <img
@@ -58,7 +60,7 @@ function Show(props) {
         <div className="show__text">
           <div className="show__info">
             <span className="show__span">Song: </span>
-            <span className='show__span2'>{music.song}</span>
+            <span className='show__span2'> <a href={music.url} target='_blank' rel="noopener noreferrer" className='link'>{music.song}</a></span>
           </div>
 
           <div className="show__info">
@@ -69,19 +71,20 @@ function Show(props) {
             <span className="show__span">Genre: </span>
             <span className='show__span2' > {music.genre}</span>
           </div>
-          <div className="show__info">
-            <span className="show__span">Link: </span>
-            <span className='show__span2'>
-              <a href={music.url}>{music.song}</a>
-            </span>
-          </div>
+          
         </div>
       </div>
+<div className='show__btn'>
 
-      <div className='show__delete'>
+  <Link to="/">
+   <button className='btn__btn blue' > Return</button>
+  </Link>
+
+   
         <Form action={`/delete/${music._id}`} method="post">
-          <input type="submit" value="delete" />
+          <input className='btn__btn red' type="submit" value="Delete" />
         </Form>
+      
       </div>
     </>
   )
