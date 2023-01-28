@@ -5,6 +5,8 @@
 @import 'footer.css';
 @import 'create.css';
 
+
+
 *,*::before, *::after{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
@@ -22,10 +24,6 @@ a {
     color:rgb(97, 236, 236)
 }
 
-img {
-    border-radius: 30px;
-    width: 200px;
-  }
 
   .App {
     text-align: center;

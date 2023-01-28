@@ -10,10 +10,11 @@ function Header(props) {
           </div>
         </div>
       </Link>
+      
 
       <div>
         <Link to="add">
-          <button className="header__add--btn">New</button>
+          <button className="header__add--btn">Add Song</button>
         </Link>
       </div>
     </div>
